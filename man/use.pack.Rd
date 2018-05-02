@@ -4,10 +4,12 @@
 \alias{use.pack}
 \title{Package installing and loading function}
 \usage{
-use.pack(pack)
+use.pack(pack, dependencies = TRUE)
 }
 \arguments{
-\item{pack}{A package name as a quoted string.}
+\item{pack}{character value of the name of a package whose current versions should be downloaded from the repositories.}
+
+\item{dependencies}{logical indicating whether to also install uninstalled packages which this packages depend on/link to/import/suggest.}
 }
 \description{
 The use.pack function takes a single command, the name of a package, and will install it, if not already installed, and then load it.

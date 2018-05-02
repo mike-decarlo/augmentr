@@ -4,10 +4,12 @@
 \alias{use.packs}
 \title{Package (multiple) installing and loading function}
 \usage{
-use.packs(packlist = c())
+use.packs(packlist = c(), dependencies = TRUE)
 }
 \arguments{
-\item{packlist}{A list of package names as a vector of quoted strings.}
+\item{packlist}{character vector of the names of packages whose current versions should be downloaded from the repositories.}
+
+\item{dependencies}{logical indicating whether to also install uninstalled packages which these packages depend on/link to/import/suggest.}
 }
 \description{
 The use.packs function takes a single command, a list of package names, and will install them, if not already installed, and then load them.

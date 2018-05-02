@@ -1,7 +1,8 @@
 #' Package (multiple) installing and loading function
 #' 
 #' The use.packs function takes a single command, a list of package names, and will install them, if not already installed, and then load them.
-#' @param packlist A list of package names as a vector of quoted strings.
+#' @param packlist character vector of the names of packages whose current versions should be downloaded from the repositories.
+#' @param dependencies logical indicating whether to also install uninstalled packages which these packages depend on/link to/import/suggest.
 #' 
 #' @keywords use pack install package
 #' @export
@@ -10,7 +11,7 @@
 #' @examples 
 #' use.packs(c("ggplot2", "dplyr"))
 
-use.packs <- function(packlist = c()) {
+use.packs <- function(packlist = c(), dependencies = TRUE) {
   
   packages <- c(packlist)
   
@@ -19,7 +20,7 @@ use.packs <- function(packlist = c()) {
     if (!is.element(packages[i], installed.packages()[, 1])) {
       
       message(paste("Package", packages[i], "not found, installing..."))
-      install.packages(packages[i], dep = TRUE)
+      install.packages(packages[i], dependencies = dependencies)
       
     }
     
