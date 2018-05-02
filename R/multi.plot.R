@@ -39,7 +39,7 @@
 #'   
 #' multi.plot(p1, p2, p3, p4, cols = 2)
 
-multi.plot <- function(plotlist = NULL, cols = 1, layout = NULL, ...) {
+multi.plot <- function(..., plotlist = NULL, cols = 1, layout = NULL) {
 
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)
