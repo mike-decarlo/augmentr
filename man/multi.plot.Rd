@@ -4,7 +4,7 @@
 \alias{multi.plot}
 \title{Plotting of multiple objects in a single window}
 \usage{
-multi.plot(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL)
+multi.plot(plotlist = NULL, cols = 1, layout = NULL, ...)
 }
 \arguments{
 \item{plotlist}{A vector list of plot objects, e.g. c(plot1, plot2, ..., plot_n).}
@@ -13,7 +13,7 @@ multi.plot(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL)
 
 \item{layout}{A matrix specifying the layout. If present, 'cols' is ignored.}
 
-\item{file}{}
+\item{...}{further arguments (plot names) passed to or from other methods.}
 }
 \description{
 The \code{multi.plot} function is meant to make plotting of multiple plot objects easier and more straightforward. Adapted from Winston Chang's "Cookbook for R".

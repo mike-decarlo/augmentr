@@ -4,7 +4,7 @@
 #' @param plotlist A vector list of plot objects, e.g. c(plot1, plot2, ..., plot_n).
 #' @param cols Number of columns in layout.
 #' @param layout A matrix specifying the layout. If present, 'cols' is ignored.
-#' @param file 
+#' @param ... further arguments (plot names) passed to or from other methods.
 #' 
 #' @keywords plot multi
 #' @export
@@ -39,7 +39,7 @@
 #'   
 #' multi.plot(p1, p2, p3, p4, cols = 2)
 
-multi.plot <- function(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL) {
+multi.plot <- function(plotlist = NULL, cols = 1, layout = NULL, ...) {
 
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)
