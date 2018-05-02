@@ -8,10 +8,10 @@
 #' 
 #' @keywords plot multi
 #' @export
-#' @import grid
+#' @importFrom grid grid.newpage grid.layout viewport pushViewport
 #' 
 #' @examples 
-#' usePackage("ggplot2")
+#' use.pack("ggplot2")
 #' 
 #' # This example uses the ChickWeight dataset, which comes with ggplot2
 #' # First plot
