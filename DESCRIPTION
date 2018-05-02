@@ -1,5 +1,5 @@
 Package: augmentR
-Version: 0.0.2.0
+Version: 0.0.2.1
 Date: 2018-05-02
 Title: Additional Utility and Calculatory Functions
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
@@ -7,7 +7,7 @@ Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com
 Author: Mike DeCarlo [aut, cre],
   Chris Kittrell [aut]
 Maintainer: Mike DeCarlo <decarlo.michael.j@gmail.com>
-Depends: R (>= 3.4), grid
+Depends: R (>= 3.4), grid, stats, utils
 Suggests: ggplot2
 Description: Additional utilities that are not included in base R.
   The {augmentR} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
