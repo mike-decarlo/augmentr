@@ -1,7 +1,7 @@
 #' Package installing and loading function
 #' 
 #' The use.pack function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
-#' @param package A package name as a quoted string.
+#' @param pack A package name as a quoted string.
 #' 
 #' @keywords use pack install package
 #' @export
@@ -9,16 +9,16 @@
 #' @examples 
 #' use.pack("ggplot2")
 
-use.pack <- function(package) {
+use.pack <- function(pack) {
   
-  if (!is.element(package, installed.packages()[, 1])) {
+  if (!is.element(pack, installed.packages()[, 1])) {
     
-    message(paste("Package", package, "not found, installing..."))
-    install.packages(package, dep = TRUE)
+    message(paste("Package", pack, "not found, installing..."))
+    install.packages(pack, dep = TRUE)
     
   }
   
-  message(paste0("Loading package ", package, "..."))
-  library(package, character.only = TRUE)
+  message(paste0("Loading package ", pack, "..."))
+  library(pack, character.only = TRUE)
   
 }
