@@ -19,7 +19,7 @@ multi.plot(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL)
 The \code{multi.plot} function is meant to make plotting of multiple plot objects easier and more straightforward. Adapted from Winston Chang's "Cookbook for R".
 }
 \examples{
-usePackage("ggplot2")
+use.pack("ggplot2")
 
 # This example uses the ChickWeight dataset, which comes with ggplot2
 # First plot
