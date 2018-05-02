@@ -10,6 +10,7 @@
 #'   
 #' @keywords se standard error
 #' @export
+#' @importFrom stats sd
 #' 
 #' @examples
 #' x <- rnorm(10, 5, 0.25)

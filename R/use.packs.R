@@ -5,6 +5,7 @@
 #' 
 #' @keywords use pack install package
 #' @export
+#' @importFrom utils install.packages installed.packages
 #' 
 #' @examples 
 #' use.packs(c("ggplot2", "dplyr"))

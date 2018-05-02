@@ -5,6 +5,7 @@
 #' 
 #' @keywords use pack install package
 #' @export
+#' @importFrom utils install.packages installed.packages
 #' 
 #' @examples 
 #' use.pack("ggplot2")
