@@ -1,13 +1,15 @@
 #' Package (multiple) installing and loading function
 #' 
-#' The usePackages function takes a single command, a list of package names, and will install them, if not already installed, and then load them.
+#' The use.packs function takes a single command, a list of package names, and will install them, if not already installed, and then load them.
 #' @param packlist A list of package names as a vector of quoted strings.
-#' @keywords use pack
+#' 
+#' @keywords use pack install package
 #' @export
+#' 
 #' @examples 
-#' usePackage(c("ggplot2", "dplyr"))
+#' use.packs(c("ggplot2", "dplyr"))
 
-usePackages <- function(packlist = c()) {
+use.packs <- function(packlist = c()) {
   
   packages <- c(packlist)
   

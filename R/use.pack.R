@@ -1,13 +1,15 @@
 #' Package installing and loading function
 #' 
-#' The usePackage function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
+#' The use.pack function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
 #' @param package A package name as a quoted string.
-#' @keywords use pack
+#' 
+#' @keywords use pack install package
 #' @export
+#' 
 #' @examples 
-#' usePackage("ggplot2")
+#' use.pack("ggplot2")
 
-usePackage <- function(package) {
+use.pack <- function(package) {
   
   if (!is.element(package, installed.packages()[, 1])) {
     

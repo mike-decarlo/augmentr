@@ -1,19 +1,21 @@
 #' Calculate the standard error
 #' 
-#' The \code{'sterr()'} function calculates the standard error of a variable,
+#' The \code{st.err} function calculates the standard error of a variable,
 #' taking into account \code{NA} values, either to keep or remove them
 #' depending on the user input to the \code{na.rm} argument.
 #' @param x A numeric vector for which the standard error will be calculated
 #'   from.
 #' @param na.rm If *NA* values are not an issue, then *FALSE*,
 #'   otherwise, *TRUE*.
-#' @keywords se std err
+#'   
+#' @keywords se standard error
 #' @export
+#' 
 #' @examples
 #' x <- rnorm(10, 5, 0.25)
-#' sterr(x)
+#' st.err(x)
 
-sterr <- function(x, na.rm = FALSE) {
+st.err <- function(x, na.rm = FALSE) {
   if (is.numeric(x) == FALSE) {
     stop("The variable 'x' must be numeric.\n")
   }

@@ -1,12 +1,15 @@
 #' Plotting of multiple objects in a single window
 #' 
-#' The multiPlot() function is meant to make plotting of multiple plot objects easier and more straightforward. Adapted from Winston Chang's "Cookbook for R".
+#' The \code{multi.plot} function is meant to make plotting of multiple plot objects easier and more straightforward. Adapted from Winston Chang's "Cookbook for R".
 #' @param plotlist A vector list of plot objects, e.g. c(plot1, plot2, ..., plot_n).
 #' @param cols Number of columns in layout.
 #' @param layout A matrix specifying the layout. If present, 'cols' is ignored.
 #' @param file 
+#' 
 #' @keywords plot multi
 #' @export
+#' @import grid
+#' 
 #' @examples 
 #' usePackage("ggplot2")
 #' 
@@ -34,9 +37,9 @@
 #'   ggtitle("Final weight, by diet") +
 #'   theme(legend.position="none")        # No legend (redundant in this graph)  
 #'   
-#' multiPlot(p1, p2, p3, p4, cols = 2)
+#' multi.plot(p1, p2, p3, p4, cols = 2)
 
-multiPlot <- function(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL) {
+multi.plot <- function(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL) {
 
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)

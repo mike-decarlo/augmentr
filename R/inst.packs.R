@@ -2,8 +2,10 @@
 #' 
 #' The \code{inst.packs} function takes a single command, a list of package names, and will install them, if not already installed.
 #' @param packlist A list of package names as a vector of quoted strings.
-#' @keywords inst pack
+#' 
+#' @keywords pack install package
 #' @export
+#' 
 #' @examples 
 #' inst.packs(c("ggplot2", "dplyr"))
 
