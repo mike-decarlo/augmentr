@@ -1,0 +1,17 @@
+Package: augmentR
+Type: Package
+Title: Additional Utility and Calculatory Functions
+Version: 0.0.2.0
+Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
+  person("Mike", "DeCarlo", email = "mdecarlo@knowesis-inc.com", role = c("aut", "cre"))
+Description: Additional utilities that are not included in base R.
+  The {augmentR} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
+Depends: R (>= 3.4)
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
+Imports:
+  grid
+Suggests:
+  ggplot2
