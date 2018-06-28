@@ -3,7 +3,7 @@ Version: 0.0.2.1
 Date: 2018-05-02
 Title: Additional Utility and Calculatory Functions
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
-  person("Mike", "DeCarlo", email = "mdecarlo@knowesis-inc.com", role = c("aut", "cre"))
+  person("Mike", "DeCarlo", email = "decarlo.michael.j@gmail.com", role = c("aut", "cre"))
 Author: Mike DeCarlo [aut, cre],
   Chris Kittrell [aut]
 Maintainer: Mike DeCarlo <decarlo.michael.j@gmail.com>
