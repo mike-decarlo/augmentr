@@ -19,7 +19,7 @@ Some prerequisites to getting this product up and running in R:
 
 Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the {gcd} package follow the steps:
 - Download and install the {gcd} package from Github
-  - From R/RStudio console enter: <code>devtools::install_github("wolfm4ne/augmentR")</code>
+  - From R/RStudio console enter: <code>devtools::install_github("mike-decarlo/augmentR")</code>
 - Load the {gcd} package library
   - From R/RStudio console enter: <code>library(augmentR)</code>
 
