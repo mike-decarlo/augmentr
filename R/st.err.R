@@ -5,8 +5,8 @@
 #' depending on the user input to the \code{na.rm} argument.
 #' @param x A numeric vector for which the standard error will be calculated
 #'   from.
-#' @param na.rm If *NA* values are not an issue, then *FALSE*,
-#'   otherwise, *TRUE*.
+#' @param na.rm If NA values are not an issue, then FALSE,
+#'   otherwise, TRUE.
 #'   
 #' @keywords se standard error
 #' @export

@@ -10,8 +10,8 @@ st.err(x, na.rm = FALSE)
 \item{x}{A numeric vector for which the standard error will be calculated
 from.}
 
-\item{na.rm}{If *NA* values are not an issue, then *FALSE*,
-otherwise, *TRUE*.}
+\item{na.rm}{If NA values are not an issue, then FALSE,
+otherwise, TRUE.}
 }
 \description{
 The \code{st.err} function calculates the standard error of a variable,
