@@ -1,6 +1,6 @@
 Package: augmentR
-Version: 0.0.2.1
-Date: 2018-05-02
+Version: 0.0.3.0
+Date: 2018-07-20
 Title: Additional Utility and Calculatory Functions
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
   person("Mike", "DeCarlo", email = "decarlo.michael.j@gmail.com", role = c("aut", "cre"))
