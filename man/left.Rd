@@ -13,7 +13,7 @@ left(x, n)
 }
 \description{
 \code{left} uses a specific case of the \code{substr} function to take only
-  the right most \code{n} characters from the input string.
+  the left most \code{n} characters from the input string.
 }
 \examples{
 foo <- "foo"
