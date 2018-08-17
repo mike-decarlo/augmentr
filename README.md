@@ -1,4 +1,6 @@
 # augmentR
+[![Travis-CI Build Status](https://travis-ci.org/mike-decarlo/augmentR.svg?branch=master)](https://travis-ci.org/mike-decarlo/augmentR) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/mike-decarlo/augmentR?branch=master&svg=true)](https://ci.appveyor.com/project/mike-decarlo/augmentR)
+
 Additional utilities that are not included in base R
 
 The {augmentR} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
