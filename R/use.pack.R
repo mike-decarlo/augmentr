@@ -16,7 +16,7 @@ use.pack <- function(pack, dependencies = TRUE) {
   if (!is.element(pack, installed.packages()[, 1])) {
     
     message(paste("Package", pack, "not found, installing..."))
-    install.packages(pack, dependencies = dependencies)
+    install.packages(pack, dependencies = dependencies, repos = "http://cran.us.r-project.org")
     
   }
   

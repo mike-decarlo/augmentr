@@ -17,7 +17,7 @@ inst.packs <- function(packlist = c(), dependencies = TRUE)
   for (i in 1:length(packages)) {
     if (!is.element(packages[i], installed.packages()[, 1])) {
       message(paste("Package", packages[i], "not found, installing..."))
-      install.packages(packages[i], dependencies = dependencies, verbose = TRUE)
+      install.packages(packages[i], dependencies = dependencies, verbose = TRUE, repos = "http://cran.us.r-project.org")
     }
   }
 }
