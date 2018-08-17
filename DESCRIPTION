@@ -3,10 +3,10 @@ Version: 0.0.3.1
 Date: 2018-07-27
 Title: Additional Utility and Calculatory Functions
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
-  person("Mike", "DeCarlo", email = "decarlo.michael.j@gmail.com", role = c("aut", "cre"))
+  person("Mike", "DeCarlo", email = "mikedecarlo.rdev@gmail.com", role = c("aut", "cre"))
 Author: Mike DeCarlo [aut, cre],
   Chris Kittrell [aut]
-Maintainer: Mike DeCarlo <decarlo.michael.j@gmail.com>
+Maintainer: Mike DeCarlo <mikedecarlo.rdev@gmail.com>
 Depends: R (>= 3.4), grid, stats, utils
 Suggests: ggplot2
 Description: Additional utilities that are not included in base R.
