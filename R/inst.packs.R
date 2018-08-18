@@ -7,9 +7,6 @@
 #' @keywords pack install package
 #' @export
 #' @importFrom utils install.packages installed.packages
-#' 
-#' @examples 
-#' inst.packs(c("dplyr", "stringr"))
 
 inst.packs <- function(packlist = c(), dependencies = TRUE) 
 {
