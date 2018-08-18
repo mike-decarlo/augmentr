@@ -11,8 +11,7 @@
 #' @importFrom grid grid.newpage grid.layout viewport pushViewport
 #' 
 #' @examples 
-#' install.packages("ggplot2")
-#' library(ggplot2)
+#' use.pack("ggplot2")
 #' 
 #' # This example uses the ChickWeight dataset, which comes with ggplot2
 #' # First plot
