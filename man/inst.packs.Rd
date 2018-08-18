@@ -15,7 +15,7 @@ inst.packs(packlist = c(), dependencies = TRUE)
 The \code{inst.packs} function takes a single command, a list of package names, and will install them, if not already installed.
 }
 \examples{
-inst.packs(c("ggplot2", "dplyr"))
+inst.packs(c("dplyr", "stringr"))
 }
 \keyword{install}
 \keyword{pack}

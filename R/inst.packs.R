@@ -9,7 +9,7 @@
 #' @importFrom utils install.packages installed.packages
 #' 
 #' @examples 
-#' inst.packs(c("ggplot2", "dplyr"))
+#' inst.packs(c("dplyr", "stringr"))
 
 inst.packs <- function(packlist = c(), dependencies = TRUE) 
 {

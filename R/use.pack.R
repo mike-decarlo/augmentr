@@ -9,7 +9,7 @@
 #' @importFrom utils install.packages installed.packages
 #' 
 #' @examples 
-#' use.pack("ggplot2")
+#' use.pack("dplyr")
 
 use.pack <- function(pack, dependencies = TRUE) {
   

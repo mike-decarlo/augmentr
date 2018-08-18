@@ -15,7 +15,7 @@ use.packs(packlist = c(), dependencies = TRUE)
 The use.packs function takes a single command, a list of package names, and will install them, if not already installed, and then load them.
 }
 \examples{
-use.packs(c("ggplot2", "dplyr"))
+use.packs(c("dplyr", "stringr"))
 }
 \keyword{install}
 \keyword{pack}

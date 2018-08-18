@@ -15,7 +15,7 @@ use.pack(pack, dependencies = TRUE)
 The use.pack function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
 }
 \examples{
-use.pack("ggplot2")
+use.pack("dplyr")
 }
 \keyword{install}
 \keyword{pack}
