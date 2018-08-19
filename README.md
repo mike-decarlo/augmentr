@@ -1,5 +1,5 @@
 # augmentR
-[![Travis-CI Build Status](https://travis-ci.org/mike-decarlo/augmentR.svg?branch=master)](https://travis-ci.org/mike-decarlo/augmentR) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/mike-decarlo/augmentR?branch=master&svg=true)](https://ci.appveyor.com/project/mike-decarlo/augmentR)
+[![Travis-CI Build Status](https://travis-ci.org/mike-decarlo/augmentR.svg?branch=master)](https://travis-ci.org/mike-decarlo/augmentR) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/mike-decarlo/augmentR?branch=master&svg=true)](https://ci.appveyor.com/project/mike-decarlo/augmentR) [![codecov](https://codecov.io/gh/mike-decarlo/augmentR/branch/master/graph/badge.svg)](https://codecov.io/gh/mike-decarlo/augmentR)
 
 Additional utilities that are not included in base R
 
