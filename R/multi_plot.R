@@ -8,8 +8,8 @@
 #' @param layout A matrix specifying the layout. If present, 'cols' is ignored.
 #' @param ... further arguments (plot names) passed to or from other methods.
 #' @keywords plot multi
-#' @export
 #' @importFrom grid grid.newpage grid.layout viewport pushViewport
+#' @export
 multi_plot <- function(..., plotlist = NULL, cols = 1, layout = NULL) {
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)

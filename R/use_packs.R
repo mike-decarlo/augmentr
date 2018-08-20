@@ -6,10 +6,10 @@
 #' @param dependencies logical indicating whether to also install uninstalled
 #'   packages which these packages depend on/link to/import/suggest.
 #' @keywords use pack install package
-#' @export
 #' @importFrom utils install.packages installed.packages
 #' @examples
 #' use_packs(c("dplyr", "stringr"))
+#' @export
 use_packs <- function(packlist = c(), dependencies = TRUE) {
   packages <- c(packlist)
   for (i in 1:length(packages)) {

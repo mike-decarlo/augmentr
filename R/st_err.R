@@ -7,11 +7,11 @@
 #' @param na_rm If NA values are not an issue, then FALSE,
 #'   otherwise, TRUE.
 #' @keywords se standard error
-#' @export
 #' @importFrom stats sd
 #' @examples
 #' x <- rnorm(10, 5, 0.25)
 #' st_err(x)
+#' @export
 st_err <- function(x, na_rm = FALSE) {
   if (is.numeric(x) == FALSE) {
     stop("The variable 'x' must be numeric.\n")

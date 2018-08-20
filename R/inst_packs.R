@@ -6,8 +6,8 @@
 #' @param dependencies logical indicating whether to also install uninstalled
 #'   packages which these packages depend on/link to/import/suggest.
 #' @keywords pack install package
-#' @export
 #' @importFrom utils install.packages installed.packages
+#' @export
 inst_packs <- function(packlist = c(), dependencies = TRUE) {
   packages <- c(packlist)
   for (i in 1:length(packages)) {
