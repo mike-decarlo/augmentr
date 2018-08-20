@@ -12,7 +12,9 @@ lhs \%out\% rhs
 \item{rhs}{A value or vector to be un-matched to.}
 }
 \description{
-The \code{\%out\%} function works as the inverse of \code{\%in\%}, looking for the absence of value or values of the \code{lhs} from the \code{rhs}.
+The \code{\%out\%} function works as the inverse of
+  \code{\%in\%}, looking for the absence of value or values of the 
+  \code{lhs} from the \code{rhs}.
 }
 \examples{
 v <- c("a","b","c")

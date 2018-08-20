@@ -2,7 +2,9 @@
 % Please edit documentation in R/left.R
 \name{left}
 \alias{left}
-\title{Extract the \code{n} characters from the left of a string}
+\title{Extract the \code{n} characters from the left of a string
+\code{left} uses a specific case of the \code{substr} function to take only
+  the left most \code{n} characters from the input string.}
 \usage{
 left(x, n)
 }
@@ -12,11 +14,11 @@ left(x, n)
 \item{n}{the number of characters from the left of the string to extract}
 }
 \description{
+Extract the \code{n} characters from the left of a string
 \code{left} uses a specific case of the \code{substr} function to take only
   the left most \code{n} characters from the input string.
 }
 \examples{
 foo <- "foo"
 left(foo, 2)
-
 }

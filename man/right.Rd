@@ -2,7 +2,9 @@
 % Please edit documentation in R/right.R
 \name{right}
 \alias{right}
-\title{Extract the \code{n} characters from the right of a string}
+\title{Extract the \code{n} characters from the right of a string
+\code{right} uses a specific case of the \code{substr} function to take only
+  the right most \code{n} characters from the input string.}
 \usage{
 right(x, n)
 }
@@ -12,11 +14,11 @@ right(x, n)
 \item{n}{the number of characters from the right of the string to extract}
 }
 \description{
+Extract the \code{n} characters from the right of a string
 \code{right} uses a specific case of the \code{substr} function to take only
   the right most \code{n} characters from the input string.
 }
 \examples{
 foo <- "foo"
 right(foo, 2)
-
 }
