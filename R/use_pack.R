@@ -7,8 +7,6 @@
 #'   packages which this packages depend on/link to/import/suggest.
 #' @keywords use pack install package
 #' @importFrom utils install.packages installed.packages
-#' @examples
-#' use_pack("dplyr")
 #' @export
 use_pack <- function(pack, dependencies = TRUE) {
   if (!is.element(pack, installed.packages()[, 1])) {

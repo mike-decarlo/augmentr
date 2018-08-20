@@ -20,9 +20,6 @@ Package installing and loading function
 \code{use_pack} takes a single command, the name of a package, and will
   install it, if not already installed, and then load it.
 }
-\examples{
-use_pack("dplyr")
-}
 \keyword{install}
 \keyword{pack}
 \keyword{package}

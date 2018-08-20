@@ -20,9 +20,6 @@ Package (multiple) installing and loading function
 \code{use_packs} takes a single command, a list of package names, and will
   install them, if not already installed, and then load them.
 }
-\examples{
-use_packs(c("dplyr", "stringr"))
-}
 \keyword{install}
 \keyword{pack}
 \keyword{package}

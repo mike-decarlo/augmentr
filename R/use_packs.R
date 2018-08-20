@@ -7,8 +7,6 @@
 #'   packages which these packages depend on/link to/import/suggest.
 #' @keywords use pack install package
 #' @importFrom utils install.packages installed.packages
-#' @examples
-#' use_packs(c("dplyr", "stringr"))
 #' @export
 use_packs <- function(packlist = c(), dependencies = TRUE) {
   packages <- c(packlist)
