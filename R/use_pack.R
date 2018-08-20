@@ -8,12 +8,16 @@
 #' @keywords use pack install package
 #' @export
 #' @importFrom utils install.packages installed.packages
-#' @examples 
+#' @examples
 #' use.pack("dplyr")
 use.pack <- function(pack, dependencies = TRUE) {
   if (!is.element(pack, installed.packages()[, 1])) {
     message(paste("Package", pack, "not found, installing..."))
-    install.packages(pack, dependencies = dependencies, repos = "http://cran.us.r-project.org")
+    install.packages(
+      pack
+      , dependencies = dependencies
+      , repos = "http://cran.us.r-project.org"
+      )
   }
   message(paste0("Loading package ", pack, "..."))
   library(pack, character.only = TRUE)

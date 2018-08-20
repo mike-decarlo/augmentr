@@ -3,7 +3,7 @@
 #'   the left most \code{n} characters from the input string.
 #' @param x a string
 #' @param n the number of characters from the left of the string to extract
-#' @examples 
+#' @examples
 #' foo <- "foo"
 #' left(foo, 2)
 #' @export

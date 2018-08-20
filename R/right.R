@@ -3,7 +3,7 @@
 #'   the right most \code{n} characters from the input string.
 #' @param x a string
 #' @param n the number of characters from the right of the string to extract
-#' @examples 
+#' @examples
 #' foo <- "foo"
 #' right(foo, 2)
 #' @export

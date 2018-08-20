@@ -8,14 +8,18 @@
 #' @keywords use pack install package
 #' @export
 #' @importFrom utils install.packages installed.packages
-#' @examples 
+#' @examples
 #' use_packs(c("dplyr", "stringr"))
 use_packs <- function(packlist = c(), dependencies = TRUE) {
   packages <- c(packlist)
   for (i in 1:length(packages)) {
     if (!is.element(packages[i], installed.packages()[, 1])) {
       message(paste("Package", packages[i], "not found, installing..."))
-      install.packages(packages[i], dependencies = dependencies, repos = "http://cran.us.r-project.org")
+      install.packages(
+        packages[i]
+        , dependencies = dependencies
+        , repos = "http://cran.us.r-project.org"
+        )
     }
     message(paste0("Loading Package ", packages[i], "..."))
     library(packages[i], character.only = TRUE)

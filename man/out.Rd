@@ -13,7 +13,7 @@ lhs \%out\% rhs
 }
 \description{
 The \code{\%out\%} function works as the inverse of
-  \code{\%in\%}, looking for the absence of value or values of the 
+  \code{\%in\%}, looking for the absence of value or values of the
   \code{lhs} from the \code{rhs}.
 }
 \examples{

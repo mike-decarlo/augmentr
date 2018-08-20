@@ -5,22 +5,22 @@
 \title{Calculate the standard error
 The \code{st_err} function calculates the standard error of a variable,
 taking into account \code{NA} values, either to keep or remove them
-depending on the user input to the \code{na.rm} argument.}
+depending on the user input to the \code{na_rm} argument.}
 \usage{
-st_err(x, na.rm = FALSE)
+st_err(x, na_rm = FALSE)
 }
 \arguments{
 \item{x}{A numeric vector for which the standard error will be calculated
 from.}
 
-\item{na.rm}{If NA values are not an issue, then FALSE,
+\item{na_rm}{If NA values are not an issue, then FALSE,
 otherwise, TRUE.}
 }
 \description{
 Calculate the standard error
 The \code{st_err} function calculates the standard error of a variable,
 taking into account \code{NA} values, either to keep or remove them
-depending on the user input to the \code{na.rm} argument.
+depending on the user input to the \code{na_rm} argument.
 }
 \examples{
 x <- rnorm(10, 5, 0.25)
