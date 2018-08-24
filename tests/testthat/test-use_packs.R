@@ -5,10 +5,4 @@ test_that("installing packages works", {
   expect_message(
     use_packs(packs)
   )
-  packs <- NA
-  expect_error(
-    expect_warning(
-      use_packs(packs)
-    )
-  )
 })
