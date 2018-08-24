@@ -18,7 +18,7 @@ st_err <- function(x, na_rm = FALSE) {
   }
   if (na_rm == FALSE) {
     se <-  (sd(x, na.rm = na_rm) / ((length(x)) ^ 0.5))
-  } else if (na.rm == TRUE) {
+  } else if (na_rm == TRUE) {
     se <- (sd(x, na.rm = na_rm) / ((length(x) - sum(is.na(x))) ^ 0.5))
   } else {
     stop("The variable 'na.rm' must be set to either 'TRUE' or 'FALSE'.\n")

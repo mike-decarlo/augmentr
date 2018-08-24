@@ -13,7 +13,8 @@ Imports:
   stats,
   utils
 Suggests: 
-  ggplot2
+    ggplot2,
+    testthat
 Description: Additional utilities that are not included in base R.
   The {augmentR} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
 License: file LICENSE
