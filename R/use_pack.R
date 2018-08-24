@@ -9,14 +9,18 @@
 #' @importFrom utils install.packages installed.packages
 #' @export
 use_pack <- function(pack, dependencies = TRUE) {
-  if (!is.element(pack, installed.packages()[, 1])) {
-    message(paste("Package", pack, "not found, installing..."))
-    install.packages(
-      pack
-      , dependencies = dependencies
-      , repos = "http://cran.us.r-project.org"
-      )
+  if (is.null(pack)) {
+    stop("Error: 'packlist' must be length >= 1.\n")
+  } else {
+      if (!is.element(pack, installed.packages()[, 1])) {
+      message(paste("Package", pack, "not found, installing..."))
+      install.packages(
+        pack
+        , dependencies = dependencies
+        , repos = "http://cran.us.r-project.org"
+        )
+    }
+    message(paste0("Loading package ", pack, "..."))
+    library(pack, character.only = TRUE)
   }
-  message(paste0("Loading package ", pack, "..."))
-  library(pack, character.only = TRUE)
 }

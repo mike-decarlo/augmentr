@@ -10,16 +10,20 @@
 #' @export
 use_packs <- function(packlist = c(), dependencies = TRUE) {
   packages <- c(packlist)
-  for (i in 1:length(packages)) {
-    if (!is.element(packages[i], installed.packages()[, 1])) {
-      message(paste("Package", packages[i], "not found, installing..."))
-      install.packages(
-        packages[i]
-        , dependencies = dependencies
-        , repos = "http://cran.us.r-project.org"
-        )
+  if (is.null(packages)) {
+    stop("Error: 'packlist' must be length >= 1.\n")
+  } else {
+    for (i in 1:length(packages)) {
+      if (!is.element(packages[i], installed.packages()[, 1])) {
+        message(paste("Package", packages[i], "not found, installing..."))
+        install.packages(
+          packages[i]
+          , dependencies = dependencies
+          , repos = "http://cran.us.r-project.org"
+          )
+      }
+      message(paste0("Loading Package ", packages[i], "..."))
+      library(packages[i], character.only = TRUE)
     }
-    message(paste0("Loading Package ", packages[i], "..."))
-    library(packages[i], character.only = TRUE)
   }
 }
