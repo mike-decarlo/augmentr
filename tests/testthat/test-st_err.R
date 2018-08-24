@@ -19,7 +19,7 @@ test_that("success", {
     st_err(x, na_rm = F)
     , sd(x, na.rm = F) / ((length(x)) ^ 0.5)
   )
-  
+
   x[2] <- NA
   expect_equal(
     st_err(x, na_rm = T)
