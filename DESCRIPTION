@@ -11,7 +11,8 @@ Depends: R (>= 3.4)
 Imports: 
   grid,
   stats,
-  utils
+  utils,
+  rstudioapi
 Suggests: 
     ggplot2,
     testthat
