@@ -1,4 +1,4 @@
 Name: Insert %out%
 Description: Inserts `%out%` at the cursor position.
-Binding: insertOutAddin
+Binding: insert_out_addin
 Interactive: false
