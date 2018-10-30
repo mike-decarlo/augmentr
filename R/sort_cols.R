@@ -44,7 +44,7 @@ sort_cols <- function(df = NULL, order = "asc") {
   if (order == "asc") {
     df <- df[, order(colnames(df), decreasing = F)]
   } else if (order == "desc") {
-    df <- df[, order(colnames(df), decreasing = )]
+    df <- df[, order(colnames(df), decreasing = T)]
   }
   return(df)
 }

@@ -4,7 +4,7 @@
 \alias{sort_cols}
 \title{Dataframe Column Sorting Function
 \code{sort_cols} takes two arguments, the name of a dataframe and the order
-  (ascending or descending), and will then provide the dataframe in the 
+  (ascending or descending), and will then provide the dataframe in the
   column sorting as specified.}
 \usage{
 sort_cols(df = NULL, order = "asc")
@@ -17,7 +17,7 @@ sort_cols(df = NULL, order = "asc")
 \description{
 Dataframe Column Sorting Function
 \code{sort_cols} takes two arguments, the name of a dataframe and the order
-  (ascending or descending), and will then provide the dataframe in the 
+  (ascending or descending), and will then provide the dataframe in the
   column sorting as specified.
 }
 \keyword{columns}
