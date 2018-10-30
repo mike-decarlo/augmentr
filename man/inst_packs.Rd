@@ -6,7 +6,7 @@
 The \code{inst_packs} function takes a single command, a list of package
   names, and will install them, if not already installed.}
 \usage{
-inst_packs(packlist = c(), dependencies = TRUE)
+inst_packs(packlist = NULL, dependencies = TRUE)
 }
 \arguments{
 \item{packlist}{character vector of the names of packages whose current

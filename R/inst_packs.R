@@ -8,7 +8,12 @@
 #' @keywords pack install package
 #' @importFrom utils install.packages installed.packages
 #' @export
-inst_packs <- function(packlist = c(), dependencies = TRUE) {
+inst_packs <- function(packlist = NULL, dependencies = TRUE) {
+  if (is.null(packlist)) {
+    stop(
+      "\nArgument 'packlist' must be of length >= 1.\n"
+    )
+  }
   packages <- c(packlist)
   for (i in 1:length(packages)) {
     if (!is.element(packages[i], installed.packages()[, 1])) {
