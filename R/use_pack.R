@@ -10,7 +10,7 @@
 #' @export
 use_pack <- function(pack, dependencies = TRUE) {
   if (is.null(pack)) {
-    stop("Error: 'packlist' must be length >= 1.\n")
+    stop("Error: 'packlist' must be length = 1.\n")
   } else {
       if (!is.element(pack, installed.packages()[, 1])) {
       message(paste("Package", pack, "not found, installing..."))
