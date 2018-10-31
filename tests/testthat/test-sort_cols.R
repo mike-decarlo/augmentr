@@ -19,15 +19,15 @@ test_that("errors when x null", {
   )
 })
 
-test_that("warns when x not a 'data.frame' class", {
-  x <- cbind(b = c(6, 7, 8, 9, 10), a = c(1, 2, 3, 4, 5))
-  expect_warning(
-    sort_cols(x = x, order = "asc")
-  )
-  expect_warning(
-    sort_cols(x = x, order = "desc")
-  )
-})
+# test_that("warns when x not a 'data.frame' class", {
+#   x <- cbind(b = c(6, 7, 8, 9, 10), a = c(1, 2, 3, 4, 5))
+#   expect_warning(
+#     sort_cols(x = x, order = "asc")
+#   )
+#   expect_warning(
+#     sort_cols(x = x, order = "desc")
+#   )
+# })
 
 test_that("errors if not 'asc' or 'desc' entered for order", {
   x <- data.frame(b = c(6, 7, 8, 9, 10), a = c(1, 2, 3, 4, 5))

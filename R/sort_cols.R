@@ -12,15 +12,15 @@ sort_cols <- function(x = NULL, order = "asc") {
       "The 'x' argument must be a non-null, dataframe object.\n"
     )
   }
-  if (class(x) != "data.frame") {
-    warning(
-      paste0(
-        "Object 'x' is not of class 'data.frame'.\n"
-        , "Converting to 'data.frame'.\n"
-      )
-    )
-    x <- as.data.frame(x)
-  }
+  # if (class(x) != "data.frame") {
+  #   warning(
+  #     paste0(
+  #       "Object 'x' is not of class 'data.frame'.\n"
+  #       , "Converting to 'data.frame'.\n"
+  #     )
+  #   )
+  #   x <- as.data.frame(x)
+  # }
   if (class(order) != "character") {
     stop(
       "\nThe 'order' argument requires a character input of 'asc' or 'desc'.\n"
