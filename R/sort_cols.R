@@ -2,24 +2,24 @@
 #' \code{sort_cols} takes two arguments, the name of a dataframe and the order
 #'   (ascending or descending), and will then provide the dataframe in the
 #'   column sorting as specified.
-#' @param df a dataframe object.
+#' @param x a dataframe object.
 #' @param order asc or desc for ascending or descending ordering respectively.
 #' @keywords sort columns dataframe
 #' @export
-sort_cols <- function(df = NULL, order = "asc") {
-  if (is.null(df)) {
+sort_cols <- function(x = NULL, order = "asc") {
+  if (is.null(x)) {
     stop(
-      "The 'df' argument must be a non-null, dataframe object.\n"
+      "The 'x' argument must be a non-null, dataframe object.\n"
     )
   }
-  if (class(df) != "data.frame") {
+  if (class(x) != "data.frame") {
     warning(
       paste0(
-        "\nObject 'df' is not of class 'data.frame'.\n"
-        , "nConverting to 'data.frame'.\n"
+        "Object 'x' is not of class 'data.frame'.\n"
+        , "Converting to 'data.frame'.\n"
       )
     )
-    df <- as.data.frame(df)
+    x <- as.data.frame(x)
   }
   if (class(order) != "character") {
     stop(
@@ -36,15 +36,15 @@ sort_cols <- function(df = NULL, order = "asc") {
   }
   message(
     paste0(
-      "\nObject 'df' columns being sorted in "
+      "\nObject 'x' columns being sorted in "
       , ifelse(order == "asc", "ascending", "descending")
       , ", alphabetical order.\n"
     )
   )
   if (order == "asc") {
-    df <- df[, order(colnames(df), decreasing = F)]
+    x <- x[, order(colnames(x), decreasing = F)]
   } else if (order == "desc") {
-    df <- df[, order(colnames(df), decreasing = T)]
+    x <- x[, order(colnames(x), decreasing = T)]
   }
-  return(df)
+  return(x)
 }

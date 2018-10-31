@@ -7,10 +7,10 @@
   (ascending or descending), and will then provide the dataframe in the
   column sorting as specified.}
 \usage{
-sort_cols(df = NULL, order = "asc")
+sort_cols(x = NULL, order = "asc")
 }
 \arguments{
-\item{df}{a dataframe object.}
+\item{x}{a dataframe object.}
 
 \item{order}{asc or desc for ascending or descending ordering respectively.}
 }
