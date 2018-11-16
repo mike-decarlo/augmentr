@@ -1,19 +1,16 @@
 context("test-col_class")
-
 test_that("Error message when 'x' object is NULL", {
   x <- NULL
   expect_error(
     col_class(x = x)
   )
 })
-
 test_that("Returns all column classes when 'find_class' is NULL", {
   x <- data.frame(a = c("a", "b", "c"), b = c(1, 2, 3))
   c_man <- sapply(x, class)
   c_aut <- col_class(x)
   expect_identical(c_aut, c_man)
 })
-
 test_that("Returns select column classes when 'find_class' is single not NULL"
           , {
             x <- data.frame(a = c("a", "b", "c"), b = c(1, 2, 3))
@@ -24,7 +21,6 @@ test_that("Returns select column classes when 'find_class' is single not NULL"
             expect_identical(c_aut, c_man)
             }
           )
-
 test_that("Returns select column classes when 'find_class' is multiple not NULL"
           , {
             x <- data.frame(a = c("a", "b", "c"), b = c(1, 2, 3))
@@ -35,5 +31,3 @@ test_that("Returns select column classes when 'find_class' is multiple not NULL"
             expect_identical(c_aut, c_man)
           }
 )
-
-
