@@ -6,14 +6,14 @@
 The \code{inst_packs} function takes a single command, a list of package
   names, and will install them, if not already installed.}
 \usage{
-inst_packs(packlist = NULL, dependencies = TRUE)
+inst_packs(..., dependencies = TRUE)
 }
 \arguments{
-\item{packlist}{character vector of the names of packages whose current
-versions should be downloaded from the repositories.}
-
 \item{dependencies}{logical indicating whether to also install uninstalled
 packages which these packages depend on/link to/import/suggest.}
+
+\item{packlist}{character vector of the names of packages whose current
+versions should be downloaded from the repositories.}
 }
 \description{
 Multiple package installation (without loading)

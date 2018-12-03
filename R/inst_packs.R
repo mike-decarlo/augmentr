@@ -8,7 +8,8 @@
 #' @keywords pack install package
 #' @importFrom utils install.packages installed.packages
 #' @export
-inst_packs <- function(packlist = NULL, dependencies = TRUE) {
+inst_packs <- function(..., dependencies = TRUE) {
+  packages <- c(...)
   if (is.null(packlist)) {
     stop(
       "\nArgument 'packlist' must be of length >= 1.\n"
