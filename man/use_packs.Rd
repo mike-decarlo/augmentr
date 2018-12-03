@@ -6,14 +6,17 @@
 \code{use_packs} takes a single command, a list of package names, and will
   install them, if not already installed, and then load them.}
 \usage{
-use_packs(packlist = c(), dependencies = TRUE)
+use_packs(..., dependencies = TRUE, force = FALSE)
 }
 \arguments{
-\item{packlist}{character vector of the names of packages whose current
+\item{...}{one or more character strings of package names
 versions should be downloaded from the repositories.}
 
 \item{dependencies}{logical indicating whether to also install uninstalled
 packages which these packages depend on/link to/import/suggest.}
+
+\item{force}{logical indicating whether packages should be forced to be
+installed/updated}
 }
 \description{
 Package (multiple) installing and loading function

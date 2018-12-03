@@ -1,6 +1,6 @@
 Package: augmentR
-Version: 0.0.5.1
-Date: 2018-11-15
+Version: 0.0.5.2
+Date: 2018-12-03
 Title: Additional Utility and Calculatory Functions
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
   person("Mike", "DeCarlo", email = "mikedecarlo.rdev@gmail.com", role = c("aut", "cre"))
@@ -12,7 +12,8 @@ Imports:
   grid,
   stats,
   utils,
-  rstudioapi
+  rstudioapi,
+  devtools
 Suggests: 
     ggplot2,
     testthat
