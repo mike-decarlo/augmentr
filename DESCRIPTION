@@ -20,8 +20,8 @@ Suggests:
 Description: Additional utilities that are not included in base R.
   The {augmentr} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
 License: file LICENSE
-URL: https://github.com/mike-decarlo/augmentR
-BugReports: https://github.com/mike-decarlo/augmentR
+URL: https://github.com/mike-decarlo/augmentr
+BugReports: https://github.com/mike-decarlo/augmentr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
