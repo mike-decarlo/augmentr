@@ -1,13 +1,18 @@
 context("test-use_packs")
 
-test_that("installing packages works", {
+test_that("packages to install is null causes error", {
   expect_error(
     use_packs()
   )
-  packs <- c("gapminder")
+})
+  
+test_that("gapminder can be installed", {
   expect_message(
-    use_packs(packs)
+    use_packs("gapminder")
   )
+})
+
+test_that("NA value for pakcages causes error and warning", {
   packs <- NA
   expect_error(
     expect_warning(

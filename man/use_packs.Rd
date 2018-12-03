@@ -10,7 +10,7 @@ use_packs(..., dependencies = TRUE, force = FALSE)
 }
 \arguments{
 \item{...}{one or more character strings of package names
-versions should be downloaded from the repositories.}
+to be downloaded from the repositories.}
 
 \item{dependencies}{logical indicating whether to also install uninstalled
 packages which these packages depend on/link to/import/suggest.}
