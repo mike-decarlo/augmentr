@@ -15,7 +15,7 @@ inst_packs <- function(..., dependencies = TRUE) {
       "\nMust include at least one package to install.\n"
     )
   }
-  for (i in 1:length(packages)) {
+  for (i in seq_along(packages)) {
     if (!is.element(packages[i], installed.packages()[, 1])) {
       message(paste("Package", packages[i], "not found, installing..."))
       install.packages(
