@@ -1,4 +1,4 @@
 library(testthat)
-library(augmentR)
+library(augmentr)
 
-test_check("augmentR")
+test_check("augmentr")
