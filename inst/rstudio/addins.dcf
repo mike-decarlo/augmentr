@@ -2,3 +2,8 @@ Name: Insert %out%
 Description: Inserts `%out%` at the cursor position.
 Binding: insert_out_addin
 Interactive: false
+
+Name: Insert ~
+Description: Inserts ` ~ ` at the cursor position.
+Binding: insert_tilda_addin
+Interactive: false
