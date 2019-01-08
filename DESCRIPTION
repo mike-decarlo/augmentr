@@ -1,6 +1,6 @@
 Package: augmentr
-Version: 0.0.5.2
-Date: 2018-12-03
+Version: 0.0.5.3
+Date: 2019-01-08
 Title: Additional Utility and Calculatory Functions
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
   person("Mike", "DeCarlo", email = "mikedecarlo.rdev@gmail.com", role = c("aut", "cre"))
@@ -15,9 +15,9 @@ Imports:
   rstudioapi,
   devtools
 Suggests: 
-    ggplot2,
-    testthat,
-    covr
+  ggplot2,
+  testthat,
+  covr
 Description: Additional utilities that are not included in base R.
   The {augmentr} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
 License: file LICENSE
