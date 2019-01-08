@@ -2,6 +2,7 @@
 
 export("%out%")
 export(insert_out_addin)
+export(insert_tilda_addin)
 export(inst_packs)
 export(left)
 export(multi_plot)
