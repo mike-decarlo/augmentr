@@ -11,3 +11,9 @@ test_that("installing with packs = NULL errors", {
     inst_packs()
   )
 })
+
+test_that("attempting to install already installed package gets message", {
+  expect_message(
+    inst_packs("stats")
+  )
+})
