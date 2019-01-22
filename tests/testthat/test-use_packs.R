@@ -12,6 +12,12 @@ test_that("gapminder can be installed", {
   )
 })
 
+test_that("force gapminder can be installed", {
+  expect_message(
+    use_packs("gapminder", force = T)
+  )
+})
+
 test_that("NA value for pakcages causes error and warning", {
   packs <- NA
   expect_error(
