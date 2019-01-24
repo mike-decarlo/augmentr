@@ -6,14 +6,18 @@
 \code{use_packs} takes a single command, a list of package names, and will
   install them, if not already installed, and then load them.}
 \usage{
-use_packs(..., dependencies = TRUE, force = FALSE)
+use_packs(..., update = TRUE, dependencies = TRUE, force = FALSE)
 }
 \arguments{
 \item{...}{one or more character strings of package names
-to be downloaded from the repositories.}
+to be downloaded from the repositories}
 
-\item{dependencies}{logical indicating whether to also install uninstalled
-packages which these packages depend on/link to/import/suggest.}
+\item{update}{a boolean; if \code{TRUE} then any available updates for the
+package will be installed, if \code{FALSE} then updates will not be
+installed}
+
+\item{dependencies}{a boolean; if \code{TRUE} dependency packages will also
+be installed, if \code{FALSE} dependency packages will not be installed}
 
 \item{force}{logical indicating whether packages should be forced to be
 installed/updated}

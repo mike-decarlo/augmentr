@@ -1,14 +1,16 @@
 #' Package installing and loading function
 #' \code{use_pack} takes a single command, the name of a package, and will
 #'   install it, if not already installed, and then load it.
-#' @param pack character value of the name of a package whose current versions
-#'   should be downloaded from the repositories.
-#' @param dependencies logical indicating whether to also install uninstalled
-#'   packages which this packages depend on/link to/import/suggest.
+#' @param pack a string; the name of a package to be installed
+#' @param update a boolean; if \code{TRUE} then any available updates for the
+#'   package will be installed, if \code{FALSE} then updates will not be
+#'   installed
+#' @param dependencies a boolean; if \code{TRUE} dependency packages will also
+#'   be installed, if \code{FALSE} dependency packages will not be installed
 #' @keywords use pack install package
 #' @importFrom utils install.packages installed.packages
 #' @export
-use_pack <- function(pack, dependencies = TRUE) {
+use_pack <- function(pack, update = TRUE, dependencies = TRUE) {
   if (is.null(pack)) {
     stop("Error: 'packlist' must be length = 1.\n")
   } else {
@@ -19,7 +21,14 @@ use_pack <- function(pack, dependencies = TRUE) {
         , dependencies = dependencies
         , repos = "http://cran.us.r-project.org"
         )
-    }
+      } else if (update == TRUE & is.element(pack, new.packages())) {
+        message(paste0("Update found for ", pack, ", updating..."))
+        install.packages(
+          pack
+          , dependencies = dependencies
+          , repos = "http://cran.us.r-project.org"
+        )
+      }
     message(paste0("Loading package ", pack, "..."))
     library(pack, character.only = TRUE)
   }

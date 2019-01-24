@@ -6,14 +6,17 @@
 \code{use_pack} takes a single command, the name of a package, and will
   install it, if not already installed, and then load it.}
 \usage{
-use_pack(pack, dependencies = TRUE)
+use_pack(pack, update = TRUE, dependencies = TRUE)
 }
 \arguments{
-\item{pack}{character value of the name of a package whose current versions
-should be downloaded from the repositories.}
+\item{pack}{a string; the name of a package to be installed}
 
-\item{dependencies}{logical indicating whether to also install uninstalled
-packages which this packages depend on/link to/import/suggest.}
+\item{update}{a boolean; if \code{TRUE} then any available updates for the
+package will be installed, if \code{FALSE} then updates will not be
+installed}
+
+\item{dependencies}{a boolean; if \code{TRUE} dependency packages will also
+be installed, if \code{FALSE} dependency packages will not be installed}
 }
 \description{
 Package installing and loading function
