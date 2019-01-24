@@ -2,7 +2,7 @@ context("test-inst_packs")
 
 test_that("installing packages works", {
   expect_message(
-    inst_packs("nycflights13")
+    inst_packs("gapminder")
   )
 })
 
@@ -12,8 +12,14 @@ test_that("installing with packs = NULL errors", {
   )
 })
 
+test_that("attempting to update already installed package gets message", {
+  expect_message(
+    inst_packs("stats", update = TRUE)
+  )
+})
+
 test_that("attempting to install already installed package gets message", {
   expect_message(
-    inst_packs("stats")
+    inst_packs("stats", update = FALSE)
   )
 })
