@@ -14,7 +14,7 @@ test_that("gapminder can be installed", {
 
 test_that("gapminder updated if available", {
   expect_message(
-    use_packs("gapminder", update = TRUE)
+    use_packs("gapminder")
   )
 })
 

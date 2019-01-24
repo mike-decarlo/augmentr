@@ -8,7 +8,7 @@ test_that("installing packages works", {
 
 test_that("updating packages works", {
   expect_message(
-    use_pack("gapminder", update = TRUE)
+    use_pack("gapminder")
   )
 })
 
