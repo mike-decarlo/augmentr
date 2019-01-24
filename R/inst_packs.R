@@ -35,7 +35,11 @@ inst_packs <- function(..., update = TRUE, dependencies = TRUE) {
         , repos = "http://cran.us.r-project.org"
         )
     } else {
-      message(paste("No updates for", packages[i], "found and will not be installed."))
+      message(paste(
+        "No updates for"
+        , packages[i]
+        , "found and will not be installed."
+        ))
     }
   }
 }
