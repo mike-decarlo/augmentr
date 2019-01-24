@@ -8,7 +8,7 @@
 #' @param dependencies a boolean; if \code{TRUE} dependency packages will also
 #'   be installed, if \code{FALSE} dependency packages will not be installed
 #' @keywords use pack install package
-#' @importFrom utils install.packages installed.packages
+#' @importFrom utils install.packages installed.packages new.packages
 #' @export
 use_pack <- function(pack, update = TRUE, dependencies = TRUE) {
   if (is.null(pack)) {

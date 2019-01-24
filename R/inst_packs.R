@@ -9,7 +9,7 @@
 #' @param dependencies a boolean; if \code{TRUE} dependency packages will also
 #'   be installed, if \code{FALSE} dependency packages will not be installed
 #' @keywords pack install package
-#' @importFrom utils install.packages installed.packages
+#' @importFrom utils install.packages installed.packages new.packages
 #' @export
 inst_packs <- function(..., update = TRUE, dependencies = TRUE) {
   packages <- c(...)

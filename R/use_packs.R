@@ -11,7 +11,7 @@
 #' @param force logical indicating whether packages should be forced to be
 #'   installed/updated
 #' @keywords use pack install package
-#' @importFrom utils install.packages installed.packages
+#' @importFrom utils install.packages installed.packages new.packages
 #' @export
 use_packs <- function(..., update = TRUE, dependencies = TRUE, force = FALSE) {
   packages <- c(...)
