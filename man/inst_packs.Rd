@@ -6,15 +6,11 @@
 The \code{inst_packs} function takes a single command, a list of package
   names, and will install them, if not already installed.}
 \usage{
-inst_packs(..., update = TRUE, dependencies = TRUE)
+inst_packs(..., dependencies = TRUE)
 }
 \arguments{
 \item{...}{one or more character strings of package names
 to be downloaded from the repositories}
-
-\item{update}{a boolean; if \code{TRUE} then any available updates for the
-package will be installed, if \code{FALSE} then updates will not be
-installed}
 
 \item{dependencies}{a boolean; if \code{TRUE} dependency packages will also
 be installed, if \code{FALSE} dependency packages will not be installed}

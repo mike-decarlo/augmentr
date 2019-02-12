@@ -8,21 +8,21 @@ test_that("packages to install is null causes error", {
   
 test_that("gapminder can be installed", {
   expect_message(
-    use_packs("gapminder", update = FALSE)
+    use_packs("gapminder")#, update = FALSE
   )
   unloadNamespace("gapminder")
 })
 
-test_that("gapminder updated if available", {
-  expect_message(
-    use_packs("gapminder")
-  )
-  unloadNamespace("gapminder")
-})
+# test_that("gapminder updated if available", {
+#   expect_message(
+#     use_packs("gapminder")
+#   )
+#   unloadNamespace("gapminder")
+# })
 
 test_that("force gapminder can be installed", {
   expect_message(
-    use_packs("gapminder", update = FALSE, force = TRUE)
+    use_packs("gapminder", force = TRUE)#, update = FALSE
   )
   unloadNamespace("gapminder")
 })
