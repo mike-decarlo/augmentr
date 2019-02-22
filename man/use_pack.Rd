@@ -6,13 +6,16 @@
 \code{use_pack} takes a single command, the name of a package, and will
   install it, if not already installed, and then load it.}
 \usage{
-use_pack(pack = NULL, dependencies = TRUE)
+use_pack(package = NULL, dependencies = TRUE, force = FALSE)
 }
 \arguments{
-\item{pack}{a string; the name of a package to be installed}
+\item{package}{a string; the name of a package to be installed}
 
 \item{dependencies}{a boolean; if \code{TRUE} dependency packages will also
 be installed, if \code{FALSE} dependency packages will not be installed}
+
+\item{force}{logical indicating whether packages should be forced to be
+installed/updated}
 }
 \description{
 Package installing and loading function
