@@ -1,7 +1,9 @@
 context("test-use_pack")
 
-unloadNamespace("harrypotter")
-remove.packages("harrypotter")
+if ("harrypotter" %in% installed.packages()[, 1]) {
+  unloadNamespace("harrypotter")
+  remove.packages("harrypotter")
+}
 
 test_that("installing with packs = NULL errors", {
   expect_error(
