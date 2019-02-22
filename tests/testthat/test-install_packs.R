@@ -4,6 +4,7 @@ test_that("installing packages works", {
   expect_message(
     install_packs("harrypotter")
   )
+  remove.packages("harrypotter")
 })
 
 test_that("installing with packs = NULL errors", {
@@ -16,4 +17,5 @@ test_that("attempting to install already installed package gets message", {
   expect_message(
     install_packs("harrypotter")
   )
+  remove.packages("harrypotter")
 })
