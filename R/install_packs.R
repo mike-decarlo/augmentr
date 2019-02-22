@@ -1,5 +1,5 @@
 #' Multiple package installation (without loading)
-#' The \code{inst_packs} function takes a single command, a list of package
+#' The \code{install_packs} function takes a single command, a list of package
 #'   names, and will install them, if not already installed.
 #' @param ... one or more character strings of package names
 #'   to be downloaded from the repositories
@@ -11,7 +11,7 @@
 #' @keywords pack install package
 #' @importFrom utils install.packages installed.packages new.packages
 #' @export
-inst_packs <- function(..., dependencies = TRUE) {#, update = TRUE
+install_packs <- function(..., dependencies = TRUE) {
   packages <- c(...)
   if (is.null(packages)) {
     stop(
@@ -27,13 +27,6 @@ inst_packs <- function(..., dependencies = TRUE) {#, update = TRUE
         , verbose = TRUE
         , repos = "http://cran.us.r-project.org"
         )
-    # } else if (update == TRUE & is.element(packages[i], new.packages())) {
-    #   message(paste0("Update found for ", packages[i], ", updating..."))
-    #   install.packages(
-    #     packages[i]
-    #     , dependencies = dependencies
-    #     , repos = "http://cran.us.r-project.org"
-    #     )
     } else {
       message(paste(
         "No updates for"
