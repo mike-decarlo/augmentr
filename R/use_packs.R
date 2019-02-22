@@ -26,8 +26,7 @@ use_packs <- function(..., dependencies = TRUE, force = FALSE) {
           , dependencies = dependencies
           , repos = "http://cran.us.r-project.org"
         )
-      }
-      else if (!is.element(packages[i], installed.packages()[, 1])) {
+      } else if (!is.element(packages[i], installed.packages()[, 1])) {
         message(paste("Package", packages[i], "not found, installing..."))
         install.packages(
           packages[i]
