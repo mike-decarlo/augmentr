@@ -10,7 +10,7 @@
 #' @keywords use pack install package
 #' @importFrom utils install.packages installed.packages new.packages
 #' @export
-use_pack <- function(pack, dependencies = TRUE) {#, update = TRUE
+use_pack <- function(pack, dependencies = TRUE) {
   if (is.null(pack)) {
     stop("Error: 'packlist' must be length = 1.\n")
   } else {
@@ -21,13 +21,6 @@ use_pack <- function(pack, dependencies = TRUE) {#, update = TRUE
         , dependencies = dependencies
         , repos = "http://cran.us.r-project.org"
         )
-      # } else if (update == TRUE & is.element(pack, new.packages())) {
-      #   message(paste0("Update found for ", pack, ", updating..."))
-      #   install.packages(
-      #     pack
-      #     , dependencies = dependencies
-      #     , repos = "http://cran.us.r-project.org"
-      #   )
       }
     message(paste0("Loading package ", pack, "..."))
     library(pack, character.only = TRUE)

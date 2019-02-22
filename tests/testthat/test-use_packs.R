@@ -6,25 +6,18 @@ test_that("packages to install is null causes error", {
   )
 })
   
-test_that("gapminder can be installed", {
+test_that("jcolors can be installed", {
   expect_message(
-    use_packs("gapminder")#, update = FALSE
+    use_packs("jcolors")#, update = FALSE
   )
-  unloadNamespace("gapminder")
+  unloadNamespace("jcolors")
 })
 
-# test_that("gapminder updated if available", {
-#   expect_message(
-#     use_packs("gapminder")
-#   )
-#   unloadNamespace("gapminder")
-# })
-
-test_that("force gapminder can be installed", {
+test_that("force jcolors can be installed", {
   expect_message(
-    use_packs("gapminder", force = TRUE)#, update = FALSE
+    use_packs("jcolors", force = TRUE)#, update = FALSE
   )
-  unloadNamespace("gapminder")
+  unloadNamespace("jcolors")
 })
 
 test_that("NA value for pakcages causes error and warning", {

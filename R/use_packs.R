@@ -13,7 +13,7 @@
 # @param update a boolean; if \code{TRUE} then any available updates for the
 #   package will be installed, if \code{FALSE} then updates will not be
 #   installed
-use_packs <- function(..., dependencies = TRUE, force = FALSE) {#, update = TRUE
+use_packs <- function(..., dependencies = TRUE, force = FALSE) {
   packages <- c(...)
   if (is.null(packages)) {
     stop("\nMust include at least one package to install.\n")
@@ -34,13 +34,6 @@ use_packs <- function(..., dependencies = TRUE, force = FALSE) {#, update = TRUE
           , dependencies = dependencies
           , repos = "http://cran.us.r-project.org"
           )
-      # } else if (update == TRUE & is.element(packages[i], new.packages())) {
-      #   message(paste0("Update found for ", packages[i], ", updating..."))
-      #   install.packages(
-      #     packages[i]
-      #     , dependencies = dependencies
-      #     , repos = "http://cran.us.r-project.org"
-      #   )
       }
       message(paste0("Loading Package ", packages[i], "..."))
       library(packages[i], character.only = TRUE)
