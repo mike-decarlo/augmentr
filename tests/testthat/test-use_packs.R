@@ -8,9 +8,10 @@ test_that("packages to install is null causes error", {
   
 test_that("harrypotter can be installed", {
   expect_message(
-    use_packs("harrypotter")
+    use_packs("harrypotter", force = FALSE)
   )
   unloadNamespace("harrypotter")
+  remove.packages("harrypotter")
 })
 
 test_that("force harrypotter can be installed", {
@@ -18,6 +19,7 @@ test_that("force harrypotter can be installed", {
     use_packs("harrypotter", force = TRUE)
   )
   unloadNamespace("harrypotter")
+  remove.packages("harrypotter")
 })
 
 test_that("NA value for pakcages causes error and warning", {
