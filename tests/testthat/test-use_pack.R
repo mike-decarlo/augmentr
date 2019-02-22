@@ -1,11 +1,7 @@
 context("test-use_pack")
 
-test_that("installing packages works", {
-  expect_message(
-    use_pack("harrypotter")
-  )
-  remove.packages("harrypotter")
-})
+unloadNamespace("harrypotter")
+remove.packages("harrypotter")
 
 test_that("installing with packs = NULL errors", {
   expect_error(
@@ -13,9 +9,17 @@ test_that("installing with packs = NULL errors", {
   )
 })
 
+test_that("installing packages works", {
+  expect_message(
+    use_pack("harrypotter")
+  )
+  unloadNamespace("harrypotter")
+})
+
 test_that("attempting to install already installed package gets message", {
   expect_message(
     use_pack("harrypotter")
   )
+  unloadNamespace("harrypotter")
   remove.packages("harrypotter")
 })
