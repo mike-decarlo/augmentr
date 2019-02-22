@@ -11,6 +11,7 @@
 #' @importFrom utils install.packages installed.packages new.packages
 #' @export
 use_pack <- function(pack, dependencies = TRUE) {
+  pack <- c(pack)
   if (is.null(pack)) {
     stop("Error: 'packlist' must be length = 1.\n")
   } else {
