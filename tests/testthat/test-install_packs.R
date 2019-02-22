@@ -25,3 +25,11 @@ test_that("attempting to install already installed package gets message", {
   unloadNamespace("harrypotter")
   remove.packages("harrypotter")
 })
+
+test_that("force installing already installed package works", {
+  expect_message(
+    install_packs("harrypotter", force =  TRUE)
+  )
+  unloadNamespace("harrypotter")
+  remove.packages("harrypotter")
+})

@@ -6,7 +6,7 @@
 The \code{install_packs} function takes a single command, a list of package
   names, and will install them, if not already installed.}
 \usage{
-install_packs(..., dependencies = TRUE)
+install_packs(..., dependencies = TRUE, force = FALSE)
 }
 \arguments{
 \item{...}{one or more character strings of package names
@@ -14,6 +14,9 @@ to be downloaded from the repositories}
 
 \item{dependencies}{a boolean; if \code{TRUE} dependency packages will also
 be installed, if \code{FALSE} dependency packages will not be installed}
+
+\item{force}{logical indicating whether packages should be forced to be
+installed/updated}
 }
 \description{
 Multiple package installation (without loading)

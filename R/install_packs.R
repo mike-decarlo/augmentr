@@ -8,31 +8,37 @@
 #   installed
 #' @param dependencies a boolean; if \code{TRUE} dependency packages will also
 #'   be installed, if \code{FALSE} dependency packages will not be installed
+#' @param force logical indicating whether packages should be forced to be
+#'   installed/updated
 #' @keywords pack install package
 #' @importFrom utils install.packages installed.packages new.packages
 #' @export
-install_packs <- function(..., dependencies = TRUE) {
+install_packs <- function(..., dependencies = TRUE, force = FALSE) {
   packages <- c(...)
   if (is.null(packages)) {
     stop(
       "\nMust include at least one package to install.\n"
     )
-  }
-  for (i in seq_along(packages)) {
-    if (!is.element(packages[i], installed.packages()[, 1])) {
-      message(paste("Package", packages[i], "not found, installing..."))
-      install.packages(
-        packages[i]
-        , dependencies = dependencies
-        , verbose = TRUE
-        , repos = "http://cran.us.r-project.org"
+  } else {
+    for (i in seq_along(packages)) {
+      if (force == TRUE) {
+        message(paste0("\nInstalling ", packages[i], " specified packages.\n"))
+        install.packages(
+          packages[i]
+          , dependencies = dependencies
+          , repos = "http://cran.us.r-project.org"
         )
-    } else {
-      message(paste(
-        "No updates for"
-        , packages[i]
-        , "found and will not be installed."
-        ))
+      } else if (!is.element(packages[i], installed.packages()[, 1])) {
+        message(paste("Package", packages[i], "not found, installing..."))
+        install.packages(
+          packages[i]
+          , dependencies = dependencies
+          , verbose = TRUE
+          , repos = "http://cran.us.r-project.org"
+        )
+      } else {
+        message(paste("Package", packages[i], "already installed."))
+      }
     }
   }
 }
