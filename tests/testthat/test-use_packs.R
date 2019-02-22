@@ -1,31 +1,19 @@
 context("test-use_packs")
 
-test_that("packages to install is null causes error", {
+test_that("installing packages works", {
+  expect_message(
+    use_packs("harrypotter")
+  )
+})
+
+test_that("installing with packs = NULL errors", {
   expect_error(
     use_packs()
   )
 })
-  
-test_that("harrypotter can be installed", {
-  expect_message(
-    use_packs("harrypotter", force = FALSE)
-  )
-  unloadNamespace("harrypotter")
-  remove.packages("harrypotter")
-})
 
-test_that("force harrypotter can be installed", {
+test_that("attempting to install already installed package gets message", {
   expect_message(
-    use_packs("harrypotter", force = TRUE)
-  )
-  unloadNamespace("harrypotter")
-  remove.packages("harrypotter")
-})
-
-test_that("NA value for pakcages causes error and warning", {
-  expect_error(
-    expect_warning(
-      use_packs(NULL)
-    )
+    use_packs("harrypotter")
   )
 })
