@@ -9,9 +9,8 @@ test_that("installing packages works", {
 
 test_that("installing with packs = NULL errors", {
   expect_error(
-    use_pack(packs = NULL)
-  )
-  expect_error(
-    use_pack()
+    expect_warning(
+      use_pack(packs = NULL)
+    )
   )
 })
