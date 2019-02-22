@@ -25,7 +25,7 @@ test_that("force harrypotter can be installed", {
 test_that("NA value for pakcages causes error and warning", {
   expect_error(
     expect_warning(
-      use_pack(NA)
+      use_packs(NULL)
     )
   )
 })
