@@ -10,10 +10,12 @@
 #' @keywords use pack install package
 #' @importFrom utils install.packages installed.packages new.packages
 #' @export
-use_pack <- function(pack, dependencies = TRUE) {
+use_pack <- function(pack = NULL, dependencies = TRUE) {
   pack <- c(pack)
   if (is.null(pack)) {
-    stop("Error: 'packlist' must be length = 1.\n")
+    stop(
+      "\nMust include a package to install.\n"
+    )
   } else {
       if (!is.element(pack, installed.packages()[, 1])) {
       message(paste("Package", pack, "not found, installing..."))
