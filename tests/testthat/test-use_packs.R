@@ -6,18 +6,18 @@ test_that("packages to install is null causes error", {
   )
 })
   
-test_that("jcolors can be installed", {
+test_that("harrypotter can be installed", {
   expect_message(
-    use_packs("jcolors")#, update = FALSE
+    use_packs("harrypotter")
   )
-  unloadNamespace("jcolors")
+  unloadNamespace("harrypotter")
 })
 
-test_that("force jcolors can be installed", {
+test_that("force harrypotter can be installed", {
   expect_message(
-    use_packs("jcolors", force = TRUE)#, update = FALSE
+    use_packs("harrypotter", force = TRUE)
   )
-  unloadNamespace("jcolors")
+  unloadNamespace("harrypotter")
 })
 
 test_that("NA value for pakcages causes error and warning", {

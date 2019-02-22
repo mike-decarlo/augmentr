@@ -2,9 +2,9 @@ context("test-use_pack")
 
 test_that("installing packages works", {
   expect_message(
-    use_pack("jcolors")#, update = FALSE
+    use_pack("harrypotter")
   )
-  unloadNamespace("jcolors")
+  unloadNamespace("harrypotter")
 })
 
 test_that("installing with packs = NULL errors", {
