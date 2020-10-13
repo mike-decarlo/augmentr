@@ -15,13 +15,13 @@ Some prerequisites to getting this product up and running in R:
 - Download and install the {devtools} package from CRAN
   - From R/RStudio console enter: <code>install.packages("devtools")</code>
 - Download and install the most current {devtools} package from Github
-  - From R/RStudio console enter: <code>devtools::install_github("hadley/devtools")</code>
+  - From R/RStudio console enter: <code>remotes::install_github("r-lib/devtools")</code>
 
 ### Installing
 
 Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the {gcd} package follow the steps:
 - Download and install the {gcd} package from Github
-  - From R/RStudio console enter: <code>devtools::install_github("mike-decarlo/augmentr")</code>
+  - From R/RStudio console enter: <code>remotes::install_github("mike-decarlo/augmentr")</code>
 - Load the {gcd} package library
   - From R/RStudio console enter: <code>library(augmentr)</code>
 
