@@ -5,7 +5,7 @@
 
 Additional utilities that are not included in base R
 
-The {augmentr} package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
+The <code>{augmentr}</code> package for R contains several, one-off tools that augment the functionality provided by base R. This collection of functions are utility or calculatory in nature.
 
 ## Getting Started
 
@@ -14,15 +14,15 @@ The {augmentr} package for R contains several, one-off tools that augment the fu
 Some prerequisites to getting this product up and running in R:
 - Install R (https://www.r-project.org/)
 - Install RStudio (recommended) (https://www.rstudio.com/)
-- Download and install the {devtools} package from CRAN
+- Download and install the <code>{devtools}</code> package from CRAN
   - From R/RStudio console enter: <code>install.packages("devtools")</code>
 - Download and install the most current {devtools} package from Github
   - From R/RStudio console enter: <code>remotes::install_github("r-lib/devtools")</code>
 
 ### Installing
 
-Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the {augmentr} package follow the steps:
-- Download and install the {augmentr} package from Github
+Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the <code>{augmentr}</code> package follow the steps:
+- Download and install the <code>{augmentr}</code> package from Github
   - From R/RStudio console enter: <code>remotes::install_github("mike-decarlo/augmentr")</code>
 - Load the {augmentr} package library
   - From R/RStudio console enter: <code>library(augmentr)</code>
