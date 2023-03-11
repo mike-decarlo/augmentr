@@ -1,5 +1,7 @@
 # augmentr
-[![Travis-CI Build Status](https://travis-ci.org/mike-decarlo/augmentr.svg?branch=master)](https://travis-ci.org/mike-decarlo/augmentr) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/mike-decarlo/augmentr?branch=master&svg=true)](https://ci.appveyor.com/project/mike-decarlo/augmentr) [![codecov](https://codecov.io/gh/mike-decarlo/augmentr/branch/master/graph/badge.svg)](https://codecov.io/gh/mike-decarlo/augmentr)
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/mike-decarlo/augmentr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mike-decarlo/augmentr/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 Additional utilities that are not included in base R
 
