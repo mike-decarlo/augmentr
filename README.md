@@ -21,10 +21,10 @@ Some prerequisites to getting this product up and running in R:
 
 ### Installing
 
-Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the {gcd} package follow the steps:
-- Download and install the {gcd} package from Github
+Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the {augmentr} package follow the steps:
+- Download and install the {augmentr} package from Github
   - From R/RStudio console enter: <code>remotes::install_github("mike-decarlo/augmentr")</code>
-- Load the {gcd} package library
+- Load the {augmentr} package library
   - From R/RStudio console enter: <code>library(augmentr)</code>
 
 ## Authors
