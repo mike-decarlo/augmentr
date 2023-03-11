@@ -21,7 +21,7 @@ Some prerequisites to getting this product up and running in R:
 
 ### Installing
 
-Now that R is setup (with or without RStudio) and the {devtools} package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the <code>{augmentr}</code> package follow the steps:
+Now that R is setup (with or without RStudio) and the <code>{devtools}</code> package is installed, it's possible to start downloading and installing R packages directly from Gitub. To download, install, and start using the <code>{augmentr}</code> package follow the steps:
 - Download and install the <code>{augmentr}</code> package from Github
   - From R/RStudio console enter: <code>remotes::install_github("mike-decarlo/augmentr")</code>
 - Load the {augmentr} package library
